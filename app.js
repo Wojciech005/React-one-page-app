@@ -180,7 +180,7 @@ class App extends React.Component {
         
 
       </section>
-      <div className="list">{this.usersList()}</div>
+      <div className="list"  style={this.state.active ? {display: 'none'} : {display: 'block'}}  >{this.usersList()}</div>
       </div>
     )
   }
